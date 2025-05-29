@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday Suci Nurul Hidayati! 🎂</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #56c7ff 50%, #a8edea 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #a2ffcf;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: rgba(242, 245, 244, 0.9);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .birthday-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+            display: none;
+        }
+
+        .birthday-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .card-text {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .birthday-button {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border: none;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 2rem 0;
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+        }
+
+        .birthday-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4);
+        }
+
+        .birthday-button:active {
+            transform: translateY(-1px);
+        }
+
+        .happiness-meter {
+            margin-top: 2rem;
+        }
+
+        .meter-title {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .meter-bar {
+            width: 100%;
+            height: 15px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .meter-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcf7f, #4ecdc4);
+            border-radius: 10px;
+            animation: fillMeter 3s ease-in-out infinite;
+        }
+
+        @keyframes fillMeter {
+            0% { width: 30%; }
+            50% { width: 100%; }
+            100% { width: 30%; }
+        }
+
+        .meter-text {
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Floating elements */
+        .floating-element {
+            position: fixed;
+            font-size: 1.5rem;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .birthday-button {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎂 HAPPY BIRTHDAY SUCI! 🎂</h1>
+        <p class="subtitle">Untuk saudara perempuan terbaik di dunia!</p>
+        <img src="d:\KEBUTUHAN KULIAH\WhatsApp Image 2025-05-28 at 12.33.32.jpeg" style="width: 100%; height: auto;">
+
+        <div class="birthday-card" id="birthdayCard">
+            <div class="card-emoji">🎉</div>
+            <p class="card-text">
+Hari ini bukan sekadar tentang bertambahnya usia,
+tapi tentang perjalanan yang telah kamu tempuh dengan segala rasa—
+bahagia, lelah, syukur.
+
+Semoga setiap langkah yang diambil ke depan menjadi lebih mantap,
+dengan hati yang tenang, pikiran yang jernih, dan keyakinan yang kuat.
+Semoga kamu senantiasa diberi kesehatan yang cukup,
+kebahagiaan yang tulus, dan keberkahan yang tak pernah putus.
+
+Kau tak perlu menjadi sosok luar biasa untuk menjadi berarti.
+Cukup terus menjadi dirimu yang tulus, hangat, dan penuh rasa hormat pada hidup.
+Karena dari sanalah ketulusanmu memancar, dan dari sanalah orang-orang mencintaimu.
+
+Tak perlu terburu-buru mengejar apa pun.
+Langit punya waktunya sendiri untuk segala yang sedang kamu doakan.
+Hari ini, semoga hatimu dipenuhi damai, dan harapanmu diberi tempat tumbuh.
+
+Selamat bertambah usia, Suci.
+
+🌿 Semoga hidupmu terus berjalan dalam cahaya yang indah. 🌿 ❤️
+            </p>
+        </div>
+
+        <button class="birthday-button" onclick="celebrateBirthday()">
+            🎁 Klik untuk Kejutan Birthday! 🎁
+        </button>
+
+        <div class="happiness-meter">
+            <h3 class="meter-title">🌟 Happiness Meter 🌟</h3>
+            <div class="meter-bar">
+                <div class="meter-fill"></div>
+            </div>
+            <p class="meter-text">
+                Level kebahagiaan: <span id="happinessLevel">SUPER HAPPY! 🚀</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Birthday celebration function
+        function celebrateBirthday() {
+            const button = event.target;
+            const birthdayCard = document.getElementById('birthdayCard');
+            
+            // Show the birthday card with animation
+            birthdayCard.style.display = 'block';
+            birthdayCard.style.opacity = '0';
+            birthdayCard.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                birthdayCard.style.transition = 'all 0.5s ease-out';
+                birthdayCard.style.opacity = '1';
+                birthdayCard.style.transform = 'translateY(0)';
+            }, 10);
+            
+            const messages = [
+                "🎉 SELAMAT ULANG TAHUN SUCI! 🎉",
+                "🎂 HAPPY BIRTHDAY SUCI 🎂",
+                "🌟 SEMOGA BAHAGIA SELALU! 🌟",
+                "🎁 YOU'RE THE BEST! 🎁",
+        
+            ];
+            
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            button.innerHTML = randomMessage;
+            
+            // Create celebration explosion
+            createCelebrationExplosion(button);
+            createBirthdayWordExplosion(button);
+            
+            setTimeout(() => {
+                button.innerHTML = "🎁 Klik untuk Kejutan Birthday! 🎁";
+            }, 3000);
+        }
+
+        function createCelebrationExplosion(source) {
+            const celebrationEmojis = ['🎉', '🎂', '🎁', '🎈', '🌟', '✨', '🎊', '🥳', '💖', '🌈', '🎀', '🌸', '🦋', '💝', '👑', '🌺'];
+            
+            // Create 25 celebration elements
+            for(let i = 0; i < 25; i++) {
+                setTimeout(() => {
+                    createFloatingElement(source, celebrationEmojis[Math.floor(Math.random() * celebrationEmojis.length)], 'celebration');
+                }, i * 40);
+            }
+        }
+
+        function createBirthdayWordExplosion(source) {
+            const birthdayWords = [
+                'HAPPY', 'BIRTHDAY', 'CELEBRATE', 'PARTY', 'JOY', 'LOVE', 'SISTER',
+                'BAHAGIA', 'SELAMAT', 'CANTIK', 'AMAZING', 'WONDERFUL', 'BLESSED',
+                'SPECIAL', 'BEAUTIFUL', 'SMILE', 'SHINE', 'DREAM', 'WISHES'
+            ];
+            
+            // Create 12 words
+            for(let i = 0; i < 12; i++) {
+                setTimeout(() => {
+                    const word = birthdayWords[Math.floor(Math.random() * birthdayWords.length)];
+                    createFloatingElement(source, word, 'word');
+                }, i * 70);
+            }
+        }
+
+        function createFloatingElement(source, content, type) {
+            const element = document.createElement('div');
+            element.innerHTML = content;
+            element.className = 'floating-element';
+            
+            const rect = source.getBoundingClientRect();
+            const startX = rect.left + rect.width / 2;
+            const startY = rect.top + rect.height / 2;
+            
+            // Random direction for explosion
+            const angle = Math.random() * 2 * Math.PI;
+            const distance = Math.random() * 180 + 100;
+            const endX = startX + Math.cos(angle) * distance;
+            const endY = startY + Math.sin(angle) * distance;
+            
+            element.style.left = startX + 'px';
+            element.style.top = startY + 'px';
+            element.style.transition = 'all 1.8s ease-out';
+            
+            if (type === 'celebration') {
+                element.style.fontSize = (Math.random() * 1.5 + 1.2) + 'rem';
+            } else {
+                element.style.fontSize = (Math.random() * 0.4 + 0.6) + 'rem';
+                element.style.fontWeight = 'bold';
+                element.style.color = `hsl(${Math.random() * 360}, 80%, 65%)`;
+                element.style.textShadow = '1px 1px 3px rgba(0,0,0,0.5)';
+            }
+            
+            document.body.appendChild(element);
+            
+            // Animate
+            setTimeout(() => {
+                element.style.left = endX + 'px';
+                element.style.top = endY + 'px';
+                element.style.opacity = '1';
+                element.style.transform = `scale(1.3) rotate(${Math.random() * 720}deg)`;
+            }, 10);
+            
+            setTimeout(() => {
+                element.style.opacity = '0';
+                element.style.transform += ' translateY(-60px)';
+            }, 1000);
+            
+            setTimeout(() => {
+                element.remove();
+            }, 2200);
+        }
+
+        // Dynamic happiness level updates
+        const happinessLevels = [
+            "SUPER HAPPY! 🚀",
+            "AMAZING DAY! ✨",
+            "BIRTHDAY VIBES! 🎉",
+            "FEELING BLESSED! 🌟",
+            "PURE JOY! 💖",
+            "CELEBRATION MODE! 🥳"
+        ];
+
+        setInterval(() => {
+            const randomLevel = happinessLevels[Math.floor(Math.random() * happinessLevels.length)];
+            document.getElementById('happinessLevel').textContent = randomLevel;
+        }, 4000);
+    </script>
+</body>
+</html>
